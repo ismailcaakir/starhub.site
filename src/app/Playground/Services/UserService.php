@@ -6,8 +6,10 @@ namespace App\Playground\Services;
 
 use App\Playground\Interfaces\Repositories\IUserRepository;
 use App\Playground\Interfaces\Services\IUserService;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Laravel\Socialite\Facades\Socialite;
 use Recca0120\Repository\Criteria;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Throwable;
 
 class UserService implements IUserService
@@ -26,7 +28,7 @@ class UserService implements IUserService
     }
 
     /**
-     * @return mixed|void
+     * @return bool|Authenticatable
      * @throws Throwable
      */
     public function loginGithub()
@@ -55,5 +57,18 @@ class UserService implements IUserService
         }
 
         return auth()->loginUsingId($userEntity->id);
+    }
+
+    /**
+     * @return RedirectResponse
+     */
+    public function redirectGithub()
+    {
+        return Socialite::driver('github')->redirect();
+    }
+
+    public function syncRepository()
+    {
+        // TODO: Implement syncRepository() method.
     }
 }

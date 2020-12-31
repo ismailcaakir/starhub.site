@@ -15,9 +15,23 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\AppController::class, 'welcome'])->name('welcome');
-Route::get('/dashboard', [\App\Http\Controllers\AppController::class, 'index'])->middleware('auth')->name('dashboard');
+/**
+ * APP
+ */
+Route::get('/', [\App\Http\Controllers\AppController::class, 'welcome'])
+    ->name('welcome');
 
+Route::get('/dashboard', [\App\Http\Controllers\AppController::class, 'index'])
+    ->middleware('auth')
+    ->name('dashboard');
+
+Route::get('/user/sync-repository', [\App\Http\Controllers\UserController::class, 'syncRepository'])
+    ->middleware('auth')
+    ->name('user.sync-repository');
+/**
+ * AUTH
+ */
+Route::get('/auth/logout', [\App\Http\Controllers\UserController::class, 'logout'])->name('auth.logout');
 Route::get('/auth/github/redirect', [\App\Http\Controllers\UserController::class, 'redirectGithub'])->name('auth.login.github.redirect');
 Route::get('/auth/github/callback', [\App\Http\Controllers\UserController::class, 'callbackGithub'])->name('auth.login.github.callback');
 

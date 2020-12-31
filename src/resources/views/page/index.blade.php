@@ -53,10 +53,10 @@
                 <span class="d-none d-sm-inline-block">{{__('Buy a Credit!')}}</span>
             </button>
 
-            <button type="button" class="btn btn-sm btn-dark">
+            <a href="{{route('user.sync-repository')}}" class="btn btn-sm btn-dark">
                 <i class="fa fa-sync mr-1"></i>
                 <span class="d-none d-sm-inline-block">{{__('Sync My Repositories')}}</span>
-            </button>
+            </a>
 
         </div>
     </div>

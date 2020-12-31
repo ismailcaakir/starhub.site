@@ -25,11 +25,21 @@ class UserController extends Controller
     }
 
     /**
+     *
+     */
+    public function syncRepository()
+    {
+        $this->userService->syncRepository();
+
+        return redirect()->back();
+    }
+
+    /**
      * @return RedirectResponse
      */
     public function redirectGithub()
     {
-        return Socialite::driver('github')->redirect();
+        return $this->userService->redirectGithub();
     }
 
     /**
@@ -44,5 +54,15 @@ class UserController extends Controller
         }
 
         return redirect()->route('dashboard');
+    }
+
+    /**
+     *
+     */
+    public function logout()
+    {
+       auth()->logout();
+
+       return redirect()->route('welcome');
     }
 }
