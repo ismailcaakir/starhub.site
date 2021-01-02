@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Playground\Interfaces\Services\IRepoService;
 use App\Playground\Interfaces\Services\IUserService;
 use Laravel\Socialite\Contracts\User;
 use Laravel\Socialite\Facades\Socialite;
@@ -25,13 +26,13 @@ class UserController extends Controller
     }
 
     /**
-     *
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function syncRepository()
     {
         $this->userService->syncRepository();
 
-        return redirect()->back();
+        return redirect()->route('dashboard')->with('message', 'Your account repository has been synced.');
     }
 
     /**
@@ -50,10 +51,10 @@ class UserController extends Controller
         $auth = $this->userService->loginGithub();
 
         if (!$auth) {
-            return redirect()->route('welcome');
+            return redirect()->route('welcome')->with('message', __("Can't login."));
         }
 
-        return redirect()->route('dashboard');
+        return redirect()->route('dashboard')->with('message', __('You are logging.'));
     }
 
     /**
@@ -63,6 +64,6 @@ class UserController extends Controller
     {
        auth()->logout();
 
-       return redirect()->route('welcome');
+       return redirect()->route('welcome')->with('message', __('Logout success.'));
     }
 }

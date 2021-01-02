@@ -10,7 +10,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="034b80b3-c9ef-4234-a6df-68c4763dfb64" name="Default Changelist" comment="" />
+    <list default="true" id="034b80b3-c9ef-4234-a6df-68c4763dfb64" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/starhub.site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starhub.site.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Playground/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Playground/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Playground/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Playground/Services/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/page/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +40,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -158,6 +177,8 @@
       <path value="$PROJECT_DIR$/src/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/src/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/src/vendor/knplabs/github-api" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/telescope" />
+      <path value="$PROJECT_DIR$/src/vendor/predis/predis" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mOPX24GwG86Xag1YT3C8bgkFd3" />
@@ -169,13 +190,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resources/views/page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/laradock/php-worker/supervisord.d" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/laradock/php-worker/supervisord.d" />
       <recent name="$PROJECT_DIR$/src/resources/views/page" />
       <recent name="$PROJECT_DIR$/src/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/laradock" />
@@ -193,6 +215,7 @@
       <workItem from="1609361701068" duration="717000" />
       <workItem from="1609363049167" duration="24000" />
       <workItem from="1609363085483" duration="10522000" />
+      <workItem from="1609596997840" duration="5066000" />
     </task>
     <servers />
   </component>
@@ -212,18 +235,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609370498899">
+    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609538459819">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609370498899" />
-    <state x="701" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1609374338866">
+    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609538459819" />
+    <state x="605" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609607499870">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="701" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1609374338866" />
-    <state x="634" y="319" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609373950083">
+    <state x="605" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1609607499870" />
+    <state x="701" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1609597815083">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="634" y="319" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609373950083" />
+    <state x="701" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1609597815083" />
+    <state x="634" y="319" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609539198155">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="634" y="319" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609539198155" />
     <state x="684" y="490" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1609368204294">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -236,9 +263,17 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="100" y="100" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609369416673" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1609372588596">
+    <state x="597" y="315" width="597" height="490" key="find.popup" timestamp="1609607406024">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1609372588596" />
+    <state x="597" y="315" width="597" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1609607406024" />
+    <state x="740" y="343" key="refactoring.ChangeSignatureDialog" timestamp="1609598093003">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="740" y="343" key="refactoring.ChangeSignatureDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609598093003" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1609607512218">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1609607512218" />
   </component>
 </project>

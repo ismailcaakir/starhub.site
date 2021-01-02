@@ -38,6 +38,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/sail" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/socialite" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/telescope" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/flysystem" />
@@ -71,6 +72,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/phpunit/php-text-template" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/phpunit/php-timer" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/predis/predis" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/event-dispatcher" />

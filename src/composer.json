@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "ext-json": "*",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "graham-campbell/github": "^10.0",
@@ -16,10 +17,11 @@
         "http-interop/http-factory-guzzle": "^1.0",
         "laravel/framework": "^8.12",
         "laravel/socialite": "^5.1",
+        "laravel/telescope": "^4.4",
         "laravel/tinker": "^2.5",
+        "predis/predis": "^1.1",
         "recca0120/repository": "^2.4",
-        "scrumble-nl/laravel-csr": "^8.0",
-      "ext-json": "*"
+        "scrumble-nl/laravel-csr": "^8.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

@@ -28,6 +28,10 @@ Route::get('/dashboard', [\App\Http\Controllers\AppController::class, 'index'])
 Route::get('/user/sync-repository', [\App\Http\Controllers\UserController::class, 'syncRepository'])
     ->middleware('auth')
     ->name('user.sync-repository');
+
+Route::post('/user/push-star-job', [\App\Http\Controllers\AppController::class, 'pushStarJob'])
+    ->middleware('auth')
+    ->name('push-star-job');
 /**
  * AUTH
  */
@@ -37,7 +41,7 @@ Route::get('/auth/github/callback', [\App\Http\Controllers\UserController::class
 
 Route::get('/deneme', function () {
 
-    config()->set('github.connections.app.clientSecret', 'f3f1efc7067b0b4685dffd2d791a4972ec300e9b');
+    config()->set('github.connections.app.clientSecret', 'a7b2b917c08544405072883967fd0fb610bfe108');
 
-    //$dd = Github::connection('app')->me()->starring()->star('kodhub', 'magento2-discord');
+    $dd = Github::connection('app')->me()->starring()->star('kodhub', 'magento2-discord');
 });

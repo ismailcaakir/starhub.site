@@ -61,6 +61,9 @@
 
     <!-- Container -->
     <div class="container py-4">
+        @if (session()->has('message'))
+            <div class="alert alert-info">{{ session()->get('message') }}</div>
+        @endif
         @yield('content')
     </div>
     <!-- END Content -->

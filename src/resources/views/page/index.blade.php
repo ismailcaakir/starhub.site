@@ -80,17 +80,26 @@
                         {!! __('Your process takes about <strong>:hourly</strong> hour(s) to complete for organic stargazing.', ['hourly' => "3-6"])  !!}
                     </div>
                     <div class="p-md-2 p-lg-3">
-                        <div class="form-group">
-                            <label for="">{{__('Select Repository')}}</label>
-                            <select name="" id="" class="form-control">
-                                <option value="">Kodhub Reporter</option>
-                                <option value="">Kodhub Core</option>
-                            </select>
-                        </div>
+                        <form action="{{route('push-star-job')}}" method="POST">
+                            <div class="form-group">
+                                <label for="">{{__('Select Repository')}}</label>
+                                <select name="repo_id" id="" class="form-control">
+                                    @forelse(auth()->user()->repos()->get() as $repo)
+                                        <option value="{{$repo->id}}">
+                                            {{$repo->name}} - {{__(':starCount stars', ['starCount' => $repo->stargazers_count])}}
+                                        </option>
+                                    @empty
+                                        <option value="">{{__('Please re-sync repositories')}}</option>
+                                    @endforelse
+                                </select>
+                            </div>
 
-                        <div class="form-group">
-                            <button class="btn btn-primary">{{__('Give me!')}}</button>
-                        </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary">{{__('Give me!')}}</button>
+                            </div>
+
+                            @csrf
+                        </form>
                     </div>
                 </div>
             </div>

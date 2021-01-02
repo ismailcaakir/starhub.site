@@ -6,7 +6,6 @@ namespace App\Playground\Repositories;
 
 use App\Models\User;
 use App\Playground\Interfaces\Repositories\IUserRepository;
-use Illuminate\Database\Eloquent\Model;
 use Recca0120\Repository\EloquentRepository;
 
 class UserRepository extends EloquentRepository implements IUserRepository

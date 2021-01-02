@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Playground\Services;
 
 use App\Playground\Interfaces\Repositories\IUserRepository;
+use App\Playground\Interfaces\Services\IRepoService;
 use App\Playground\Interfaces\Services\IUserService;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Laravel\Socialite\Facades\Socialite;
@@ -20,11 +21,26 @@ class UserService implements IUserService
     private $userRepository;
 
     /**
-     * @param IUserRepository $userRepository
+     * @var IRepoService
      */
-    public function __construct(IUserRepository $userRepository)
+    private $repoService;
+
+    /**
+     * @param IUserRepository $userRepository
+     * @param IRepoService $repoService
+     */
+    public function __construct(IUserRepository $userRepository, IRepoService $repoService)
     {
         $this->userRepository = $userRepository;
+        $this->repoService = $repoService;
+    }
+
+    /**
+     * @return IUserRepository
+     */
+    public function getUserRepository(): IUserRepository
+    {
+        return $this->userRepository;
     }
 
     /**
@@ -67,8 +83,11 @@ class UserService implements IUserService
         return Socialite::driver('github')->redirect();
     }
 
+    /**
+     * @return mixed|void
+     */
     public function syncRepository()
     {
-        // TODO: Implement syncRepository() method.
+        $this->repoService->getGithubRepoAndSave();
     }
 }
