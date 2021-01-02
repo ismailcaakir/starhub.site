@@ -76,8 +76,8 @@
                 <div class="col-md-7 col-lg-8">
                     <div class="p-md-2 p-lg-3">
                         {{ __('Remember, each user can only star a repo once.') }}
-                        {!! __('There are currently <strong>:pool_users</strong> users in the pool.', ['pool_users' => 100])  !!}
-                        {!! __('Your process takes about <strong>:hourly</strong> hour(s) to complete for organic stargazing.', ['hourly' => "3-6"])  !!}
+                        {!! __('There are currently <strong>:pool_users</strong> users in the pool.', ['pool_users' => 10])  !!}
+                        {!! __('Your process takes about <strong>:hourly</strong> hour(s) to complete for organic stargazing.', ['hourly' => "1-2"])  !!}
                     </div>
                     <div class="p-md-2 p-lg-3">
                         <form action="{{route('push-star-job')}}" method="POST">
