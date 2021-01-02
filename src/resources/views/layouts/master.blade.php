@@ -68,9 +68,6 @@
                             <i class="fa fa-user-circle mr-1"></i> {{__('Hi, :username', ['username' => auth()->user()->name])}}
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="">Profile</a>
-                            <a class="dropdown-item" href="">Settings</a>
-                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{route('auth.logout')}}">Log Out</a>
                         </div>
                     </div>
@@ -102,7 +99,7 @@
                 <strong>{{config('app.name')}}</strong> &copy; <script>document.write((new Date()).getFullYear());</script>
             </div>
             <div class="text-center text-md-right py-2">
-                Crafted with <i class="fa fa-heart text-danger"></i> by <a class="font-w600" href="https://github.com/kodhub">kodhub</a>
+                Crafted with <i class="fa fa-heart text-danger"></i> by <a class="font-w600" href="https://github.com/kodhub/starhub">open source</a>
             </div>
         </footer>
     </div>
