@@ -11,24 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="034b80b3-c9ef-4234-a6df-68c4763dfb64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/starhub.site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starhub.site.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Playground/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Playground/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Playground/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Playground/Services/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/page/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,18 +174,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/laradock/php-worker/supervisord.d" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/public" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/public" />
       <recent name="$PROJECT_DIR$/laradock/php-worker/supervisord.d" />
       <recent name="$PROJECT_DIR$/src/resources/views/page" />
       <recent name="$PROJECT_DIR$/src/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/laradock" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -215,7 +199,7 @@
       <workItem from="1609361701068" duration="717000" />
       <workItem from="1609363049167" duration="24000" />
       <workItem from="1609363085483" duration="10522000" />
-      <workItem from="1609596997840" duration="5066000" />
+      <workItem from="1609596997840" duration="5530000" />
     </task>
     <servers />
   </component>

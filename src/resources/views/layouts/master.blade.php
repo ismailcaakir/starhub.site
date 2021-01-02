@@ -5,16 +5,43 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Freebie 22 - Analytics Dashboard by pixelcave</title>
+    <!-- Primary Meta Tags -->
+    <title>Starhub - Github Free Stars your Repository</title>
+    <meta name="title" content="Starhub - Github Free Stars your Repository">
+    <meta name="description" content="Free star collecting tool for your Github libraries. It's completely free and reliable.">
 
-    <meta name="description" content="Freebie 22 - Analytics Dashboard. Check out more at https://pixelcave.com">
-    <meta name="author" content="pixelcave">
-    <meta name="robots" content="noindex, nofollow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Starhub - Github Free Stars your Repository">
+    <meta property="og:description" content="Free star collecting tool for your Github libraries. It's completely free and reliable.">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
-    <!-- Icons -->
-    <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
-    <link rel="apple-touch-icon" href="assets/media/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" href="assets/media/favicons/favicon-192x192.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Starhub - Github Free Stars your Repository">
+    <meta property="twitter:description" content="Free star collecting tool for your Github libraries. It's completely free and reliable.">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta name="author" content="ismailcaakir">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{asset('/icons')}}/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{asset('/icons')}}/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{asset('/icons')}}/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('/icons')}}/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{asset('/icons')}}/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{asset('/icons')}}/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{asset('/icons')}}/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{asset('/icons')}}/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('/icons')}}/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{asset('/icons')}}/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('/icons')}}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('/icons')}}/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('/icons')}}/favicon-16x16.png">
+    <link rel="manifest" href="{{asset('/icons')}}/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{asset('/icons')}}/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,600,700" rel="stylesheet">
