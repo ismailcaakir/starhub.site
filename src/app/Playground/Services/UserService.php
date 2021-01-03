@@ -55,7 +55,7 @@ class UserService implements IUserService
 
         if ($userEntity = $this->userRepository->first($criteria)) {
             $this->userRepository->update($userEntity->id, [
-                'name' => $user->getName(),
+                'name' => $user->getName() ?: $user->getNickname(),
                 'username' => $user->getNickname(),
                 'avatar' => $user->getAvatar(),
                 'github_profile' => json_decode(json_encode($user), true),
@@ -64,7 +64,7 @@ class UserService implements IUserService
         } else {
             $userEntity = $this->userRepository->create([
                 'email' => $user->getEmail(),
-                'name' => $user->getName(),
+                'name' => $user->getName() ?: $user->getNickname(),
                 'username' => $user->getNickname(),
                 'avatar' => $user->getAvatar(),
                 'github_profile' => json_decode(json_encode($user), true),
