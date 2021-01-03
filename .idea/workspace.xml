@@ -12,7 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ef9ed67d-639d-4080-8dba-c3e285b3e3fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock" beforeDir="false" afterPath="$PROJECT_DIR$/laradock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/nginx/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Jobs/StarJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Jobs/StarJob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Playground/Services/RepoService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Playground/Services/RepoService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Playground/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Playground/Services/UserService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,5 +212,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="597" y="315" width="597" height="490" key="find.popup" timestamp="1609714573994">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="597" y="315" width="597" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1609714573994" />
   </component>
 </project>

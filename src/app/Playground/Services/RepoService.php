@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace App\Playground\Services;
 
 use App\Jobs\StarJob;
-use App\Models\Repo;
-use App\Playground\Interfaces\Services\IRepoService;
 use App\Playground\Interfaces\Repositories\IRepoRepository;
+use App\Playground\Interfaces\Services\IRepoService;
+use App\Playground\Interfaces\Services\IUserService;
 use Exception;
 use GrahamCampbell\GitHub\Facades\GitHub;
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Recca0120\Repository\Criteria;
 
 class RepoService implements IRepoService
@@ -33,6 +34,15 @@ class RepoService implements IRepoService
     public function getRepoRepository(): IRepoRepository
     {
         return $this->repoRepository;
+    }
+
+    /**
+     * @return mixed
+     * @throws BindingResolutionException
+     */
+    public function getUserService()
+    {
+        return app()->make(IUserService::class);
     }
 
     /**
@@ -76,8 +86,13 @@ class RepoService implements IRepoService
             throw new Exception(__('Permission error'));
         }
 
-        /** @var Repo $repoEntity */
-        dispatch(new StarJob($repoEntity));
+        $criteria = Criteria::create()->whereNotNull('github_auth')->inRandomOrder()->limit(10);
+
+        $users = $this->getUserService()->getUserRepository()->get($criteria);
+
+        foreach ($users as $user) {
+            dispatch(new StarJob($repoEntity, $user));
+        }
 
         return true;
     }

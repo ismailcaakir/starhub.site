@@ -8,6 +8,7 @@ use App\Playground\Interfaces\Repositories\IUserRepository;
 use App\Playground\Interfaces\Services\IRepoService;
 use App\Playground\Interfaces\Services\IUserService;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 use Recca0120\Repository\Criteria;
@@ -22,18 +23,11 @@ class UserService implements IUserService
     private $userRepository;
 
     /**
-     * @var IRepoService
-     */
-    private $repoService;
-
-    /**
      * @param IUserRepository $userRepository
-     * @param IRepoService $repoService
      */
-    public function __construct(IUserRepository $userRepository, IRepoService $repoService)
+    public function __construct(IUserRepository $userRepository)
     {
         $this->userRepository = $userRepository;
-        $this->repoService = $repoService;
     }
 
     /**
@@ -42,6 +36,15 @@ class UserService implements IUserService
     public function getUserRepository(): IUserRepository
     {
         return $this->userRepository;
+    }
+
+    /**
+     * @return mixed
+     * @throws BindingResolutionException
+     */
+    private function getRepoService()
+    {
+        return app()->make(IRepoService::class);
     }
 
     /**
@@ -88,9 +91,10 @@ class UserService implements IUserService
 
     /**
      * @return mixed|void
+     * @throws BindingResolutionException
      */
     public function syncRepository()
     {
-        $this->repoService->getGithubRepoAndSave();
+        $this->getRepoService()->getGithubRepoAndSave();
     }
 }
