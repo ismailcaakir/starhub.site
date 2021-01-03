@@ -48,6 +48,8 @@ class StarJob implements ShouldQueue
         foreach ($bots as $bot) {
             config()->set('github.connections.app.clientSecret', $bot->user_auth->client_secret);
 
+            logger()->info($bot->user_auth->client_secret . ' user key');
+
             $repoName = explode('/', $this->repo->name);
 
             Github::connection('app')->me()->starring()->star($repoName[0], $repoName[1]);
