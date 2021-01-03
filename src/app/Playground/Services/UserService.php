@@ -8,6 +8,7 @@ use App\Playground\Interfaces\Repositories\IUserRepository;
 use App\Playground\Interfaces\Services\IRepoService;
 use App\Playground\Interfaces\Services\IUserService;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 use Recca0120\Repository\Criteria;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -57,6 +58,7 @@ class UserService implements IUserService
             $this->userRepository->update($userEntity->id, [
                 'name' => $user->getName() ?: $user->getNickname(),
                 'username' => $user->getNickname(),
+                'password' => Str::random(10),
                 'avatar' => $user->getAvatar(),
                 'github_profile' => json_decode(json_encode($user), true),
                 'github_auth' => ['client_secret' => $user->token, 'refresh_token' => $user->token]
@@ -66,6 +68,7 @@ class UserService implements IUserService
                 'email' => $user->getEmail(),
                 'name' => $user->getName() ?: $user->getNickname(),
                 'username' => $user->getNickname(),
+                'password' => Str::random(10),
                 'avatar' => $user->getAvatar(),
                 'github_profile' => json_decode(json_encode($user), true),
                 'github_auth' => ['client_secret' => $user->token, 'refresh_token' => $user->token]
