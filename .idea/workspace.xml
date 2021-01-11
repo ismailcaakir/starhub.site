@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef9ed67d-639d-4080-8dba-c3e285b3e3fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock" beforeDir="false" afterPath="$PROJECT_DIR$/laradock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/nginx/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/master.blade.php" afterDir="false" />
@@ -195,7 +194,7 @@
       <workItem from="1609675711884" duration="1138000" />
       <workItem from="1609708414170" duration="1219000" />
       <workItem from="1609754992779" duration="311000" />
-      <workItem from="1610363278614" duration="83000" />
+      <workItem from="1610363278614" duration="271000" />
     </task>
     <servers />
   </component>

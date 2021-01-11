@@ -42,7 +42,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{asset('/icons')}}/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <meta name="google-site-verification" content="MZrkiJB65rKkOkN3sTP_05HJt45i2WQ_ve_glMG0HkI" />
     <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
