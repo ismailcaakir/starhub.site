@@ -14,9 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock" beforeDir="false" afterPath="$PROJECT_DIR$/laradock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Jobs/StarJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Jobs/StarJob.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Playground/Services/RepoService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Playground/Services/RepoService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Playground/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Playground/Services/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/master.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +176,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="duplicates.index" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -195,6 +194,8 @@
       <updated>1609675710453</updated>
       <workItem from="1609675711884" duration="1138000" />
       <workItem from="1609708414170" duration="1219000" />
+      <workItem from="1609754992779" duration="311000" />
+      <workItem from="1610363278614" duration="83000" />
     </task>
     <servers />
   </component>
@@ -214,6 +215,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="405" y="196" key="SettingsEditor" timestamp="1609779991832">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="405" y="196" key="SettingsEditor/0.0.1792.1120/-1920.0.1920.1080@0.0.1792.1120" timestamp="1609779991832" />
     <state x="597" y="315" width="597" height="490" key="find.popup" timestamp="1609714573994">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
